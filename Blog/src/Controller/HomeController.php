@@ -11,6 +11,13 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
+     * @Route("/")
+     */
+    public function accueil(){
+        return $this->render('home/accueil.html.twig');
+    }
+
+    /**
      * @Route("/home", name="home")
      */
     public function index(PostRepository $ripo)
