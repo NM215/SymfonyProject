@@ -37,7 +37,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/posts/{author}", name="lire_post")
+     * @Route("/articles/{author}", name="lire_post")
      */
     public function lire(Post $post){
         return $this->render('home/post.html.twig', [
