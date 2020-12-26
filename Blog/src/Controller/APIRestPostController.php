@@ -25,7 +25,7 @@ class APIRestPostController extends AbstractController
      */
     public function getAllPosts(PostRepository $ripo) : JsonResponse
     {
-        $posts = $ripo->findAll();
+        $posts = $ripo->findLastFivePosts();
         $data = [];
 
         foreach ($posts as $post) {
