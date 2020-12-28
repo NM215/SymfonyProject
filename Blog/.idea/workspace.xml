@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84b7a379-8ab4-4769-8196-4c369b842319" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/src/Controller/HomeController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Controller/PostController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Kernel.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/home/index.html.twig" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -154,6 +154,8 @@
       <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/twig/cssinliner-extra" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kTFctHpMfQU0BF0Vwo2P6BFQ1b" />
@@ -163,6 +165,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -188,7 +191,7 @@
       <workItem from="1606404098664" duration="7141000" />
       <workItem from="1606542863230" duration="4654000" />
       <workItem from="1608493867270" duration="15584000" />
-      <workItem from="1609015098081" duration="5683000" />
+      <workItem from="1609015098081" duration="16689000" />
     </task>
     <servers />
   </component>

@@ -11,14 +11,13 @@ class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-        // $product = new Product();
-        // $manager->persist($product);
         $faker = Factory::create('fr_FR');
 
-        for( $i=0; $i<10; $i++){
+        for( $i=0; $i<30; $i++){
+
             $post = new Post();
             $post->setTitle($faker->sentence($nbWords=2, $variableNbWords = true))
-                ->setContent($faker->sentence($nbWords=10, $variableNbWords = true));
+                ->setContent($faker->sentence($nbWords=150, $variableNbWords = true));
 
             $manager->persist($post);
         }

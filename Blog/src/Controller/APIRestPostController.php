@@ -12,16 +12,6 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 class APIRestPostController extends AbstractController
 {
     /**
-     * @Route("/api/rest/post", name="a_p_i_rest_post")
-     */
-    public function index(): Response
-    {
-        return $this->render('api_rest_post/index.html.twig', [
-            'controller_name' => 'APIRestPostController',
-        ]);
-    }
-
-    /**
      * @Route("/api/posts", name="api_posts",  methods={"GET"})
      */
     public function getMyPosts(PostRepository $ripo) : JsonResponse
