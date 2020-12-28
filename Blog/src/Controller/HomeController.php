@@ -12,11 +12,11 @@ use Knp\Component\Pager\PaginatorInterface; // Nous appelons le bundle KNP Pagin
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/home", name="home")
+     * @Route("/", name="home")
      */
     public function index(PostRepository $ripo, Request $request, PaginatorInterface $paginator)
     {
-        $posts = $ripo->findAll();
+        $posts = $ripo->findLastPosts();
 
         $articles = $paginator->paginate(
             $posts, // Requête contenant les données à paginer (ici nos articles)
