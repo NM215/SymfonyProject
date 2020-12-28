@@ -13,7 +13,7 @@
                 <th>Content</th>
                 <th>Author (Slug)</th>
                 <th>CreatedAt</th>
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -25,8 +25,8 @@
                 <td>{{ post.author }}</td>
                 <td>{{ post.createdAt ? post.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
-                    <a class="btn btn-primary" href="{{ path('post_show', {'id': post.id}) }}">show</a>
-                    <a class="btn btn-primary" href="{{ path('post_edit', {'id': post.id}) }}">edit</a>
+                    <a class="btn btn-secondary" href="{{ path('post_show', {'id': post.id}) }}">Show</a>
+                    <a class="btn btn-secondary" style="margin-top: 1em;" href="{{ path('post_edit', {'id': post.id}) }}">Edit</a>
                 </td>
             </tr>
         {% else %}
@@ -38,4 +38,5 @@
     </table>
 
     <a href="{{ path('post_new') }}">Create new</a>
+
 {% endblock %}
